@@ -1,0 +1,62 @@
+#VRML V2.0 utf8
+
+# Define the green ground
+Transform {
+  translation 0 -25 0 # Position of the ground
+  children [
+    Shape {
+      appearance Appearance {
+        material Material {
+          diffuseColor 0 0.5 0 # Green color for the ground
+        }
+      }
+      geometry Box { size 100 .1 100 } # Size of the ground
+    }
+  ]
+}
+
+# Define the wall with the dartboard
+Transform {
+  translation 0 0 -50 # Position of the wall (in front of the ground)
+  children [
+    Shape {
+      appearance Appearance {
+        material Material {
+          diffuseColor 0.6 0.6 0.6 # Gray color for the wall
+        }
+      }
+      geometry Box { size 100 50 0.2 } # Size of the wall
+    }
+    Transform {
+      translation 0 0 0.1 # Position of the dartboard (on the wall)
+      children [
+        Shape {
+          appearance Appearance {
+            material Material {
+              diffuseColor 0.8 0.8 0.8 # Gray color for the dartboard
+            }
+          }
+          geometry Box { size 45.1 45.1 0.1 } # Size of the dartboard
+        }
+      ]
+    }
+  ]
+}
+
+# Define the "20" section on the dartboard
+Transform {
+  translation 0 18 -47 # Position of the "20" section (on the dartboard)
+  children [
+    Shape {
+      appearance Appearance {
+        material Material {
+          diffuseColor 1 0 0 # Red color for the "20" section
+        }
+      }
+      geometry Text {
+        string "20" # Text content 
+        fontStyle FontStyle { justify "MIDDLE" } # Justify the text
+      }
+    }
+  ]
+}
