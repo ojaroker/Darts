@@ -1,5 +1,24 @@
 #VRML V2.0 utf8
 
+
+
+# Specify Dartboard
+
+# dartboard:     451mm
+# playable area: 340mm
+# double bull:   0mm    - 6.35mm
+# single bull:   6.35mm - 16mm
+# lower single:  16mm   - 99mm
+# treble:        99mm   - 107mm
+# upper single:  107mm  - 162mm 
+# double:        162mm  - 170mm
+
+# height: 173cm to bullseye
+# distance: 237 from board
+
+
+
+
 # Define the green ground
 Transform {
   translation 0 -25 0 # Position of the ground
