@@ -26,14 +26,14 @@ Transform {
 	      
 	      Transform {
 		children	Billboard {
-		  children	DEF Tree Transform {
+		  children	DEF Dartboard Transform {
 		    children	Group {
 		      children	Shape {
 			appearance	Appearance {
 			  material	NULL
 
 			  texture	ImageTexture {
-			    url	"dartboard.jpeg"
+			    url	"dartboardPNG.png"
 			    repeatS	TRUE
 			    repeatT	TRUE
 			  }
@@ -139,45 +139,45 @@ Transform {
 	  scaleOrientation	-4.7845e-06 1 1.67119e-06  1.5708
 	}
 	DEF VP1 Viewpoint {
-	  position	5.11 24.59 7.37
-	  orientation	0.353359 0.881392 0  0
+	  position	-21.04 26.19 -167.41
+	  orientation 0.0001777 1 0.00017 1.57
 	  fieldOfView	0.785398
 	  description	"viewpoint1"
 	}
       ]
-    } #direction: -.18,.03,-.98
+    } 
   ]
 }
 DEF Light1 PointLight {
   location	-264.608 267.735 -143.698
 }
-Transform {
-  children	USE _0
+# Transform {
+#   children	USE _0
 
-  translation	-74.7793 4.06819 -62.6679
-  rotation	0 0 1  0
-}
-Transform {
-  children	USE _0
+#   translation	-74.7793 4.06819 -62.6679
+#   rotation	0 0 1  0
+# }
+# Transform {
+#   children	USE _0
 
-  translation	-74.78 4.07003 51
-  rotation	0 0 1  0
-}
-Transform {
-  children	USE _0
+#   translation	-74.78 4.07003 51
+#   rotation	0 0 1  0
+# }
+# Transform {
+#   children	USE _0
 
-  translation	5 4.07003 -172.7
-  rotation	0 0 1  0
-}
-Transform {
-  children	USE _0
+#   translation	5 4.07003 -172.7
+#   rotation	0 0 1  0
+# }
+# Transform {
+#   children	USE _0
 
-  translation	5 4.07003 -62.67
-  rotation	0 0 1  0
-}
-Transform {
-  children	USE _0
+#   translation	5 4.07003 -62.67
+#   rotation	0 0 1  0
+# }
+# Transform {
+#   children	USE _0
 
-  translation	5 4.07003 51
-  rotation	0 0 1  0
-}
+#   translation	5 4.07003 51
+#   rotation	0 0 1  0
+# }
