@@ -3,15 +3,15 @@
 # Oscar Jaroker
 # Input to this file is the r and theta values
 # Will write a .csv file called out.csv with the thrown r and theta
-# getDifficulty() and simulateThrow() were written by Professor Cipolli, Colgate University
+# getDifficulty() and simulateThrow() written by Professor Cipolli at Colgate University
 ###########
 ###########
 
 
 input = commandArgs(TRUE) #Read input from command line as character vector
-in1 = as.numeric(input[1])
-in2 = as.numeric(input[2])
-
+print(input)
+in1 = as.numeric(input[1]) # input r
+in2 = as.numeric(input[2]) # input theta
 
 # Create function getDifficulty(cpuLevel)
 getDifficulty <- function(cpuLevel){
@@ -75,11 +75,7 @@ polToCart = function(throwPolar){
   
 }
 
-
-
-
-# Specify initial difficulty, 1-100
-diff = 25
+diff = 50
 # difficulty contains standard deviations in r and theta
 difficulty = getDifficulty(diff)
 
@@ -92,4 +88,4 @@ throwCoords = polToCart(throw)
 
 
 # Write a .csv file with the results
-write.csv(throw, "out.csv")
+write.csv(throwCoords, "out.csv")
