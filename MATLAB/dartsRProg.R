@@ -1,5 +1,6 @@
 ###########
 ###########
+# Oscar Jaroker
 # Input to this file is the r and theta values
 # Will write a .csv file called out.csv with the thrown r and theta
 # getDifficulty() and simulateThrow() were written by Professor Cipolli, Colgate University
@@ -52,6 +53,31 @@ simulateThrow <- function(r, theta, difficulty){
   c(thrown.r, thrown.theta)
 }
 
+
+# Create function polToCart to convert polar coordinates of throw to cartesian
+polToCart = function(throwPolar){
+  
+  r = throwPolar[1]
+  theta = throwPolar[2]
+  #convert theta to radians
+  thetaRad = theta * pi / 180
+  
+  # convert to cartesian
+  x = r*cos(thetaRad)
+  y = r*sin(thetaRad)
+  
+  # round to 6th decimal place to avoid floating point mistakes
+  x = round(x,digits=6)
+  y = round(y,digits=6)
+  
+  # return cartesian coordinates, middle of bullseye is (0,0)
+  c(x,y)
+  
+}
+
+
+
+
 # Specify initial difficulty, 1-100
 diff = 25
 # difficulty contains standard deviations in r and theta
@@ -59,6 +85,11 @@ difficulty = getDifficulty(diff)
 
 # Simulate throw given difficulty
 throw = simulateThrow(in1,in2,difficulty)
+
+
+#Convert to cartesian
+throwCoords = polToCart(throw)
+
 
 # Write a .csv file with the results
 write.csv(throw, "out.csv")
