@@ -1,6 +1,6 @@
 ###########
 ###########
-# Oscar Jaroker
+# Oscar Jaroker 3/10/2024
 # Input to this file is the r and theta values
 # Will write a .csv file called out.csv with the thrown r and theta
 # getDifficulty() and simulateThrow() written by Professor Cipolli at Colgate University
@@ -82,10 +82,8 @@ difficulty = getDifficulty(diff)
 # Simulate throw given difficulty
 throw = simulateThrow(in1,in2,difficulty)
 
-
 #Convert to cartesian
 throwCoords = polToCart(throw)
-
 
 # Write a .csv file with the results
 write.csv(throwCoords, "out.csv")
