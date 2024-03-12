@@ -24,7 +24,7 @@ Originally, the world was written $\texttt{VRML}$ (Virtual Reality Modeling Lang
 The dartboard itself is a $\texttt{Billboard}$ node which displays the image $\texttt{dartboardPNG.png}$. \
 The $\texttt{MATLAB}$ 3D World Editor is useful for creating worlds and was used to set the simulation's viewpoint as well as create the dart. To save the time of creating a new point set for a dart, the dart in the game is actually an $\texttt{X3D}$ model of an AIM-9 Sidewinder missile supplied by $\texttt{MATLAB}$'s component library, with a supplied $\texttt{fire.png}$ texture.\
 The $\texttt{`Dart'}$ node is given an initial $\texttt{translation}$ value, or position, which is exactly $50$ units away from the dartboard in the $\texttt{x}$ direction. Helpful to the developer, nodes in the $\texttt{MATLAB}$ 3D environment have two values of $\texttt{translation}$, an initial value and a value relative to the initial. The relative $\texttt{translation}$ is what is updated during the simulation, starting at $(0,0,0)$ and ending at $(50,y_f,z_f)$.\
-**Note**: In the X3D world, the $y$ direction is up/down.
+**Note**: In the X3D world, the positive $y$ direction is up and the positive $z$ direction is left.
 
 <h2> Mechanics of the Simulation </h2>
 
