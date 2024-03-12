@@ -45,7 +45,7 @@ Finally, $x$, $y$, and $z$, all parameterized with time, are sent to the VR Sink
 ![simulink](https://github.com/ojaroker/Darts/assets/105570791/ba7398f7-021e-4138-9531-14135bc1b098)
 Here is a video of the animation where the computer aims at the Triple 20 bed (the red bed directly above the center of the board):\
 ![video](https://github.com/ojaroker/Darts/assets/105570791/54e6b676-b363-45a4-b488-4b63c194a37f)
-
+<video src='https://github.com/ojaroker/Darts/assets/105570791/54e6b676-b363-45a4-b488-4b63c194a37f' width=180/>
 
 <h2> Folder Structure </h2>
 
