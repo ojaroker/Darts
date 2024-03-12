@@ -67,7 +67,7 @@ polToCart = function(throwPolar){
   y = r*sin(thetaRad)
   
   # round to 6th decimal place to avoid floating point mistakes
-  z = round(x,digits=6)
+  z = round(z,digits=6)
   y = round(y,digits=6)
   
   # return cartesian coordinates, middle of bullseye is (0,0)
