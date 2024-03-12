@@ -4,7 +4,7 @@
 
 <h2> Introduction </h2>
 
-The goal of this project is to calculate and animate the trajectory of a dart thrown at a dartboard that will miss randomly from a selected aiming location. The project uses a $\texttt{MATLAB}$ Simulink environment to control the dynamics of the system, a world created with $\texttt{X3D}$ for the animation, and runs an $\texttt{R}$ script non-interactively to simulate the random miss of the dart. This project is an extension of a Dartbot program written in $\texttt{R}$ for a Computational Statistics course. The $\texttt{R}$ code was not converted to $\texttt{MATLAB}$ because of certain statistical functions and abilities of $\texttt{R}$ that would become much more complex in $\texttt{MATLAB}$. The $\texttt{getDifficulty()}$ and $\texttt{simulateThrow()}$ functions in $\texttt{dartsRProg.R}$ were written by Professor Cipolli at Colgate University.
+The goal of this project is to calculate and animate the trajectory of a dart thrown at a dartboard that will miss randomly from a selected aiming location. The project uses a $\texttt{MATLAB}$ Simulink environment to control the dynamics of the system, a world created with $\texttt{X3D}$ for the animation, and runs an $\texttt{R}$ script non-interactively to simulate the random miss of the dart. This project is an extension of a Dartbot program written in $\texttt{R}$ for a Computational Statistics course. The $\texttt{R}$ code was not converted to $\texttt{MATLAB}$ because of certain statistical functions and abilities of $\texttt{R}$ that would become much more complex in $\texttt{MATLAB}$. 
 
 <h2> Flow </h2>
 
@@ -58,3 +58,12 @@ Darts/
     ├── dartboardPNG.png
     └── Fire.png
 </pre>
+
+<h2> Dependencies </h2>
+
+To run this project, $\texttt{MATLAB}$ and $\texttt{R}$ must be installed. The $\texttt{MATLAB}$ license must include access to Simulink and 3D Animation and these products must also be installed. The files must be organized according to the folder structure diagram above and $\texttt{R}$ must have write permissions.
+
+
+<h2> Acknowledgements </h2>
+
+Thank you to Professor Cipolli at Colgate University for allowing use of his $\texttt{getDifficulty()}$ and $\texttt{simulateThrow()}$ functions in $\texttt{dartsRProg.R}$
