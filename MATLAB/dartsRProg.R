@@ -75,7 +75,7 @@ polToCart = function(throwPolar){
   
 }
 
-diff = 50
+diff = 35
 # difficulty contains standard deviations in r and theta
 difficulty = getDifficulty(diff)
 
