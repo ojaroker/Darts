@@ -42,7 +42,7 @@ $x(t) = \int \frac{dx}{dt}dt = \frac{10}{3}t$\
 $y(t) = \int \frac{dy}{dt}dt = \frac{1}{4}t^2+(0.375+\frac{y_f}{t_{sim}})t$\
 $z(t) = \int \frac{dz}{dt}dt = \frac{z_f}{t_{sim}}t$\
 Finally, $x$, $y$, and $z$, all parameterized with time, are sent to the VR Sink block, which updates the $\texttt{translation}$ of the dart every time the simulation 'takes' a step. Below is what the actual Simulink model looks like in the editor:\
-![simulink](./img/simulink.png)
+![simulink](https://github.com/ojaroker/Darts/assets/105570791/ba7398f7-021e-4138-9531-14135bc1b098)
 
 
 <h2> Folder Structure </h2>
