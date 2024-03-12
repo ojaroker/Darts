@@ -33,7 +33,7 @@ $\frac{d^2x}{dt^2} = 0$, $\frac{d^2y}{dt^2} = 0.5$ down, $\frac{d^2z}{dt^2} = 0$
 The value of $0.5$ for acceleration in the $y$ direction is an estimation of the value of gravity in the $\texttt{X3D}$ world.\
 Next, Simulink's integrator blocks are used to work with velocities. Initial conditions must be specified here. Because the dart must travel exactly $50$ units in the x direction in $15$ units of time no matter the throw, the $x$ velocity is constant at $\frac{50}{15}$, or $\frac{10}{3}$.\
 In calculating $y$ and $z$ initial velocities is where the relative translation is very helpful. Because the $y$ and $z$ values returned from the $\texttt{runRScript()}$ function are the final $y_f$ and $z_f$ values of the dart relative to its starting position (modified by a factor of $0.1$ to convert $mm$ to $cm$), the initial $y$ and $z$ velocities are $\frac{y_f}{t_{sim}}$ and $\frac{z_f}{t_{sim}}$, respectively.\
-In order to mimic gravity and create a parabolic trajectory with the estimiated gravity value, $0.375$ is added to the initial $y$ velocity. The following calculations occur in the Simulink model:\
+In order to mimic gravity and create a parabolic trajectory with the estimated gravity value, $0.375$ is added to the initial $y$ velocity. The following calculations occur in the Simulink model:\
 $\frac{dx}{dt} = \int \frac{d^2x}{dt^2}dt = \int 0dt = 0 + \frac{10}{3} = \frac{10}{3}$\
 $\frac{dy}{dt} = \int \frac{d^2y}{dt^2}dt = \int 0.5dt = 0.5t+0.375+\frac{y_f}{t_{sim}}$\
 $\frac{dz}{dt} = \int \frac{d^2z}{dt^2}dt = \int 0dt = 0+\frac{z_f}{t_{sim}} = \frac{z_f}{t_{sim}}$\
@@ -42,7 +42,8 @@ $x(t) = \int \frac{dx}{dt}dt = \frac{10}{3}t$\
 $y(t) = \int \frac{dy}{dt}dt = \frac{1}{4}t^2+(0.375+\frac{y_f}{t_{sim}})t$\
 $z(t) = \int \frac{dz}{dt}dt = \frac{z_f}{t_{sim}}t$\
 Finally, $x$, $y$, and $z$, all parameterized with time, are sent to the VR Sink block, which updates the $\texttt{translation}$ of the dart every time the simulation 'takes' a step. Below is what the actual Simulink model looks like in the editor:\
-![simulink](./img/simulink.png)
+![simulink](https://github.com/ojaroker/Darts/assets/105570791/ba7398f7-021e-4138-9531-14135bc1b098)
+
 
 
 <h2> Folder Structure </h2>
