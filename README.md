@@ -45,7 +45,6 @@ Finally, $x$, $y$, and $z$, all parameterized with time, are sent to the VR Sink
 ![simulink](https://github.com/ojaroker/Darts/assets/105570791/ba7398f7-021e-4138-9531-14135bc1b098)
 
 
-
 <h2> Folder Structure </h2>
 
 <pre>
