@@ -63,15 +63,16 @@ polToCart = function(throwPolar){
   thetaRad = theta * pi / 180
   
   # convert to cartesian
-  x = r*cos(thetaRad)
+  z = r*cos(thetaRad)
   y = r*sin(thetaRad)
   
   # round to 6th decimal place to avoid floating point mistakes
-  x = round(x,digits=6)
+  z = round(x,digits=6)
   y = round(y,digits=6)
   
   # return cartesian coordinates, middle of bullseye is (0,0)
-  c(x,y)
+  # left is positive z, right is negative z
+  c(z*-1,y)
   
 }
 
