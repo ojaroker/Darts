@@ -31,7 +31,7 @@ The $\texttt{simulateThrow(r,theta,difficulty)}$ function adds the error to $r$ 
 
 The figure above shows a contour plot of the probability density function (bivariate normal distribution) that effectively appears above the T20 bed when the computer difficulty is set to $50%, where the highest probability is above the origin of the plot, the exact center of the bed. The dashed boundary lines indicated the boundaries of the T20 bed relative to the center,
 $r=4,-4$ and $θ=-9,9$ degrees. One may see that there is a higher probability of missing by an error in radius by seeing that the level change in probability from the center is much higher at the $θ = 9$ degrees border than the $r = 4$ border.\
-The final function in $\texttt{dartRProg.R}$, $\texttt{polToCart(r,theta)}$ converts the calculated errors and converts them to their equivalent in the Cartesian 3D environment. These two coordinates are what the $\texttt{MATLAB}$ function uses.
+The final function in $\texttt{dartRProg.R}$, $\texttt{polToCart(r,theta)}$, converts the calculated errors and converts them to their equivalent in the Cartesian 3D environment. These two coordinates are what the $\texttt{MATLAB}$ function uses.
 
 <h2> 3D World Specifications </h2>
 
