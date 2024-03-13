@@ -85,3 +85,5 @@ To run this project, $\texttt{MATLAB}$ and $\texttt{R}$ must be installed. The $
 <h2> Acknowledgements </h2>
 
 Thank you to Professor Cipolli at Colgate University for allowing use of his $\texttt{getDifficulty()}$ and $\texttt{simulateThrow()}$ functions in $\texttt{dartsRProg.R}$
+
+&copy; 2024. This work is openly licensed via [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)
